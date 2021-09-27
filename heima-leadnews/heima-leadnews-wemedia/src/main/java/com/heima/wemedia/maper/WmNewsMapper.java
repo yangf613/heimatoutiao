@@ -13,5 +13,6 @@ import java.util.List;
 public interface WmNewsMapper extends BaseMapper<WmNews> {
 
     List<WmNewsVo> findListAndPage(@Param("dto") NewsAuthDto dto);
+
     int findListCount(@Param("dto") NewsAuthDto dto);
 }
